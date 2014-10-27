@@ -56,9 +56,8 @@ jQuery(document).ready(function($) {
     GitHubActivity.feed({ username: "pferd", selector: "#ghfeed" });
 
 
-
+	/* contact us */
 $.fn.goValidate = function() {
-
     var $form = this,
         $inputs = $form.find('input:text');
   
@@ -76,7 +75,6 @@ $.fn.goValidate = function() {
             regex: /^[2-9]\d{2}-\d{3}-\d{4}$/,
         }
     };
-	
     var validate = function(klass, value) {
         var isValid = true,
             error = '';
@@ -134,10 +132,8 @@ $.fn.goValidate = function() {
 	});
   
     $form.submit(function(e) {
-     
-     
-	 try{
-  	  $inputs.each(function() { /* test each input */
+      
+        $inputs.each(function() { /* test each input */
         	if ($(this).is('.required') || $(this).hasClass('invalid')) {
             	showError($(this));
         	}
@@ -146,32 +142,24 @@ $.fn.goValidate = function() {
         	e.preventDefault();
             $('#form-error').toggleClass('hide');
         }
-	 alert('sending ajax requst');
-	 
-	  $.ajax({
-           type: "POST",
-           url: "http://localhost:8888/SendMessage",
-           data: $("#contactMeFormId").serialize(), // serializes the form's elements.
-           success: function(data)
-           {
-               alert(data);
-           }
-         });
-			
-		alert('after ajax requst');
-		
-	 }
-		catch(error){
-		
-		console.log('exception, '+error);
-		}
-		
     });
-	
     return this;
 };
+$('form').goValidate();
 
-	$('form').goValidate();
 
 });
 
+
+   /* change profile image */
+function profileImg(x) {
+    x.style.height = "155px";
+    x.style.width = "115px";
+    document.getElementById("profileImgId").src = "assets/images/profile.png";
+}
+
+function normalImg(x) {
+    x.style.height = "115px";
+    x.style.width = "115px";
+    document.getElementById("profileImgId").src = "assets/images/profile2.png";
+}

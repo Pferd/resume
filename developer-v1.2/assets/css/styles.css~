@@ -27,7 +27,7 @@ h6 {
 }
 
 a {
-  color: #1abc9c;
+  color: #3aaa64;
   -webkit-transition: all 0.4s ease-in-out;
   -moz-transition: all 0.4s ease-in-out;
   -ms-transition: all 0.4s ease-in-out;
@@ -44,8 +44,8 @@ font-weight: bold;
 
 a:hover {
   text-decoration: underline;
-  color: #fd7d68;
-  color: #fd7d68;
+  color: #5f6b77;
+  color: #2d844e;
 }
 .btn,
 a.btn {
@@ -67,16 +67,16 @@ a.btn:focus {
 }
 a.btn-cta-primary,
 .btn-cta-primary {
-  background: #fd7d68;
-  border: 1px solid #fd7d68;
+  background: #1abc9c;
+  border: 1px solid #1abc9c;
   color: #fff;
   font-weight: 600;
   text-transform: uppercase;
 }
 a.btn-cta-primary:hover,
 .btn-cta-primary:hover {
-  background: #1abc9c;
-  border: 1px solid #1abc9c;
+  background: #49ac43;
+  border: 1px solid #49ac43;
   color: #fff;
 }
 a.btn-cta-secondary,
@@ -149,7 +149,7 @@ iframe {
   margin-bottom: 15px;
 }
 .header .profile-content .social a {
-  background: #fd7d68;
+  background: #b0b7bf;
   width: 36px;
   height: 36px;
   display: inline-block;
@@ -164,23 +164,9 @@ iframe {
   color: #fff;
   text-align: center;
 }
-
-.header .profile-content .social .twitter a:hover {
-  background: #55acee;
+.header .profile-content .social a:hover {
+  background: #778492;
 }
-.header .profile-content .social .gplus a:hover {
-  background: #D34836;
-}
-.header .profile-content .social .linkedin a:hover {
-  background: #4875B4;
-}
-.header .profile-content .social .github a:hover {
-  background: #000000;
-}
-.header .profile-content .social .facebook a:hover {
-  background: #3B5998;
-}
-
 .header .profile-content .social a .fa {
   font-size: 20px;
   padding-top: 8px;
