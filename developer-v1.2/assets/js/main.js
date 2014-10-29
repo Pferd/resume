@@ -150,7 +150,7 @@ $.fn.goValidate = function() {
 	 
 	  $.ajax({
            type: "POST",
-           url: "http://localhost:8888/SendMessage",
+           url: "SendMessage",
            data: $("#contactMeFormId").serialize(), // serializes the form's elements.
            success: function(data)
            {
