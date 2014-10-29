@@ -1,4 +1,4 @@
-resume
+Resume
 ======
 
-Dev Resume
+Development Resume for personal sites using Bootstrap.
