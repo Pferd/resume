@@ -1,4 +1,6 @@
 resume
 ======
 
-Dev Resume
+Development Resume for personal sites.
+
+
